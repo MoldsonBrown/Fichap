@@ -1,0 +1,5 @@
+com/crowdar/examples/report/Reporter.class
+com/crowdar/examples/steps/LoginSteps.class
+com/crowdar/examples/services/LoginService.class
+com/crowdar/examples/services/HomeService.class
+com/crowdar/examples/steps/HomeSteps.class
