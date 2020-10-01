@@ -11,14 +11,20 @@ public class LoginSteps {
         LoginService.isViewLoaded();
     }
 
-    @When("The user does login process with '(.*)' and '(.*)'")
-    public void doLoginProcess(String email, String password) {
-        LoginService.doLoginProcess(email, password);
+    @When ("The user does login process with '(.*)' and '(.*)'")
+    public void FailedLoginProcess(String email, String password) {
+        LoginService.FailedLoginProcess(email, password);
+
     }
 
     @Then("The modal message is '(.*)'")
     public void isModalMessageCorrect(String message) {
         LoginService.isModalMessageCorrect(message);
 
+    }
+
+    @When("The user logs in with '(.*)' and '(.*)'")
+    public void doLoginProcess(String email, String password) {
+        LoginService.doLoginProcess(email, password);
     }
 }

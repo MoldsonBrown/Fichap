@@ -5,23 +5,17 @@ Feature: As a potential client i want to interact with the login functionality
     When The user does login process with '<email>' and '<password>'
     Then The modal message is '<message>'
 
-    @Login
+    @Demo
     Examples:
       | email                              | password | message                                     |
-      | automation@gmail.com               | 123456   | El usuario o la contraseña son incorrectos. |
-      | automation2@gmail.com              | 123456   | El usuario o la contraseña son incorrectos. |
+      | loginerror@crowdaronline.com       | 123456   | El usuario o la contraseña son incorrectos. |
 
   Scenario Outline: Valid Login
     Given The fichap app is loaded correctly
-    When The user does login process with '<email>' and '<password>'
+    When The user logs in with '<email>' and '<password>'
     Then The Homepage is displayed
 
-    @Login
+    @Demo
     Examples:
       | email                              | password |
       | nelson.ceballos@crowdaronline.com  | ZDTGgP   |
-
-
-
-
-

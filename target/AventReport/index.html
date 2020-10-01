@@ -123,7 +123,7 @@
 											</span>
 											</a>
 											<div class="dropdown-menu pt-0 mt-2 animate fadeIn">
-												<a class="dropdown-item" href="#"><span class="cf">@Login</span></a>
+												<a class="dropdown-item" href="#"><span class="cf">@Demo</span></a>
 												<div class="dropdown-divider"></div>
 												<a class="dropdown-item" href="#"><span class="tf" status="clear"><i class="fa fa-dot-circle-o text-warn"></i>Clear</span></a>
 											</div>
@@ -138,8 +138,83 @@
 											devices="">
 											<span class="w-32 avatar circle pass"><span class="badge">pass</span></span>
 											<div class="list-body">
+												<a href="#" class="item-title _500">As a potential client i want to check-in and check-out</a>
+												<div class="item-except text-sm text-muted h-1x">0h 0m 45s+102ms</div>
+												<div class="tc d-none">
+													<div class="mb-4">
+														<h5><i class="text-xs ficon fa success fa-check"></i> Feature:  As a potential client i want to check-in and check-out</h5>
+														
+													</div>
+														<div class="card mt-2 node scenario pass">
+															<div class="card-body">
+																<div class="node-pre mb-3">
+																	<span class="badge"><i class="fa fa-clock-o"></i> &nbsp; 0h 0m 45s+102ms</span>
+																</div>
+																<h6 class="sn ctoggle"><i class="text-xs cicon pull-left fa text-white pass-bg fa-check mr-3"></i> Scenario Outline: CheckInOut</h6>
+																<div class="text-muted mb-1"><table class='runtime-table table-striped table'><tr><td>email</td><td>password</td></tr><tr><td>nelson.ceballos@crowdaronline.com</td><td>ZDTGgP</td></tr></table></div>
+																
+																<div class="mt-2 step-list ">
+																		<div class="card mt-2"><div class="card-body">		<span class="category-list">
+			<span class="category badge"> @Demo</span>
+		</span>
+
+																		<div class="step pass">
+																			<i class="text-xs cicon pull-left fa text-white pass-bg fa-check mr-3"></i> <h6>Scenario: CheckInOut</h6>
+																		</div>
+																			<div class="step pass">
+																				<i class="text-xs cicon pull-left fa text-white pass-bg fa-check mr-3"></i>  Given The user does login process with: 'nelson.ceballos@crowdaronline.com', 'ZDTGgP'
+																				<div class="ml-4">HomeSteps.doLoginProcess(String,String)</div>
+																					
+																			</div>
+																			<div class="step pass">
+																				<i class="text-xs cicon pull-left fa text-white pass-bg fa-check mr-3"></i>  When The user taps on CheckInButton
+																				<div class="ml-4">HomeSteps.theUserTapsOnCheckInButton()</div>
+																					
+																			</div>
+																			<div class="step pass">
+																				<i class="text-xs cicon pull-left fa text-white pass-bg fa-check mr-3"></i>  And The button CheckOutButton is displayed
+																				<div class="ml-4">HomeSteps.theButtonCheckOutButtonIsDisplayed()</div>
+																					
+																			</div>
+																			<div class="step pass">
+																				<i class="text-xs cicon pull-left fa text-white pass-bg fa-check mr-3"></i>  And The user taps on CheckOutButton
+																				<div class="ml-4">HomeSteps.theUserTapsOnCheckOutButton()</div>
+																					
+																			</div>
+																			<div class="step pass">
+																				<i class="text-xs cicon pull-left fa text-white pass-bg fa-check mr-3"></i>  And The total time spent is displayed
+																				<div class="ml-4">HomeSteps.theTotalTimeSpentIsDisplayed()</div>
+																					
+																			</div>
+																			<div class="step pass">
+																				<i class="text-xs cicon pull-left fa text-white pass-bg fa-check mr-3"></i>  And The user taps on FinishButton
+																				<div class="ml-4">HomeSteps.theUserTapsOnFinishButton()</div>
+																					
+																			</div>
+																			<div class="step pass">
+																				<i class="text-xs cicon pull-left fa text-white pass-bg fa-check mr-3"></i>  Then The Homepage is displayed
+																				<div class="ml-4">HomeSteps.theHomepageIsDisplayed()</div>
+																					
+																			</div>
+																		</div></div>
+																</div>
+															</div>
+														</div>
+												</div>
+											</div>
+											<div>
+												<span class="item-meta text-xs lt">
+												6:22 PM
+												</span>
+											</div>
+										</div>
+										<div class="list-item test bdd" status="pass" test-id="43"
+											tags=""
+											devices="">
+											<span class="w-32 avatar circle pass"><span class="badge">pass</span></span>
+											<div class="list-body">
 												<a href="#" class="item-title _500">As a potential client i want to interact with the login functionality</a>
-												<div class="item-except text-sm text-muted h-1x">0h 1m 1s+68ms</div>
+												<div class="item-except text-sm text-muted h-1x">0h 0m 51s+672ms</div>
 												<div class="tc d-none">
 													<div class="mb-4">
 														<h5><i class="text-xs ficon fa success fa-check"></i> Feature:  As a potential client i want to interact with the login functionality</h5>
@@ -148,14 +223,14 @@
 														<div class="card mt-2 node scenario pass">
 															<div class="card-body">
 																<div class="node-pre mb-3">
-																	<span class="badge"><i class="fa fa-clock-o"></i> &nbsp; 0h 0m 40s+620ms</span>
+																	<span class="badge"><i class="fa fa-clock-o"></i> &nbsp; 0h 0m 23s+661ms</span>
 																</div>
 																<h6 class="sn ctoggle"><i class="text-xs cicon pull-left fa text-white pass-bg fa-check mr-3"></i> Scenario Outline: Invalid Login</h6>
-																<div class="text-muted mb-1"><table class='runtime-table table-striped table'><tr><td>email</td><td>password</td><td>message</td></tr><tr><td>automation@gmail.com</td><td>123456</td><td>El usuario o la contraseña son incorrectos.</td></tr><tr><td>automation2@gmail.com</td><td>123456</td><td>El usuario o la contraseña son incorrectos.</td></tr></table></div>
+																<div class="text-muted mb-1"><table class='runtime-table table-striped table'><tr><td>email</td><td>password</td><td>message</td></tr><tr><td>loginerror@crowdaronline.com</td><td>123456</td><td>El usuario o la contraseña son incorrectos.</td></tr></table></div>
 																
 																<div class="mt-2 step-list ">
 																		<div class="card mt-2"><div class="card-body">		<span class="category-list">
-			<span class="category badge"> @Login</span>
+			<span class="category badge"> @Demo</span>
 		</span>
 
 																		<div class="step pass">
@@ -167,31 +242,8 @@
 																					
 																			</div>
 																			<div class="step pass">
-																				<i class="text-xs cicon pull-left fa text-white pass-bg fa-check mr-3"></i>  When The user does login process with 'automation@gmail.com' and '123456'
-																				<div class="ml-4">LoginSteps.doLoginProcess(String,String)</div>
-																					
-																			</div>
-																			<div class="step pass">
-																				<i class="text-xs cicon pull-left fa text-white pass-bg fa-check mr-3"></i>  Then The modal message is 'El usuario o la contraseña son incorrectos.'
-																				<div class="ml-4">LoginSteps.isModalMessageCorrect(String)</div>
-																					
-																			</div>
-																		</div></div>
-																		<div class="card mt-2"><div class="card-body">		<span class="category-list">
-			<span class="category badge"> @Login</span>
-		</span>
-
-																		<div class="step pass">
-																			<i class="text-xs cicon pull-left fa text-white pass-bg fa-check mr-3"></i> <h6>Scenario: Invalid Login</h6>
-																		</div>
-																			<div class="step pass">
-																				<i class="text-xs cicon pull-left fa text-white pass-bg fa-check mr-3"></i>  Given The fichap app is loaded correctly
-																				<div class="ml-4">LoginSteps.isLoginPageVisible()</div>
-																					
-																			</div>
-																			<div class="step pass">
-																				<i class="text-xs cicon pull-left fa text-white pass-bg fa-check mr-3"></i>  When The user does login process with 'automation2@gmail.com' and '123456'
-																				<div class="ml-4">LoginSteps.doLoginProcess(String,String)</div>
+																				<i class="text-xs cicon pull-left fa text-white pass-bg fa-check mr-3"></i>  When The user does login process with 'loginerror@crowdaronline.com' and '123456'
+																				<div class="ml-4">LoginSteps.FailedLoginProcess(String,String)</div>
 																					
 																			</div>
 																			<div class="step pass">
@@ -206,14 +258,14 @@
 														<div class="card mt-2 node scenario pass">
 															<div class="card-body">
 																<div class="node-pre mb-3">
-																	<span class="badge"><i class="fa fa-clock-o"></i> &nbsp; 0h 0m 19s+968ms</span>
+																	<span class="badge"><i class="fa fa-clock-o"></i> &nbsp; 0h 0m 27s+437ms</span>
 																</div>
 																<h6 class="sn ctoggle"><i class="text-xs cicon pull-left fa text-white pass-bg fa-check mr-3"></i> Scenario Outline: Valid Login</h6>
 																<div class="text-muted mb-1"><table class='runtime-table table-striped table'><tr><td>email</td><td>password</td></tr><tr><td>nelson.ceballos@crowdaronline.com</td><td>ZDTGgP</td></tr></table></div>
 																
 																<div class="mt-2 step-list ">
 																		<div class="card mt-2"><div class="card-body">		<span class="category-list">
-			<span class="category badge"> @Login</span>
+			<span class="category badge"> @Demo</span>
 		</span>
 
 																		<div class="step pass">
@@ -225,7 +277,7 @@
 																					
 																			</div>
 																			<div class="step pass">
-																				<i class="text-xs cicon pull-left fa text-white pass-bg fa-check mr-3"></i>  When The user does login process with 'nelson.ceballos@crowdaronline.com' and 'ZDTGgP'
+																				<i class="text-xs cicon pull-left fa text-white pass-bg fa-check mr-3"></i>  When The user logs in with 'nelson.ceballos@crowdaronline.com' and 'ZDTGgP'
 																				<div class="ml-4">LoginSteps.doLoginProcess(String,String)</div>
 																					
 																			</div>
@@ -242,7 +294,7 @@
 											</div>
 											<div>
 												<span class="item-meta text-xs lt">
-												12:51 PM
+												6:22 PM
 												</span>
 											</div>
 										</div>
@@ -279,7 +331,7 @@
 											</div>
 										</li>
 <li id="reportName"><a href="#" class="b-l">ExtentReports</a></li>
-<li><a href="#" class="b-l"><span class="badge badge-primary">Sep 28, 2020 12:51:42 PM</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-primary">Oct 1, 2020 06:22:06 PM</span></a></li>
 									</ul>
 								</div>
 								<div class="scroll-y">
