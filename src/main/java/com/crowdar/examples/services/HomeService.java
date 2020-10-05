@@ -10,11 +10,11 @@ public class HomeService {
     }
 
     public static void doLoginProcess(String email, String password){
-        MobileActionManager.setInput("HomeView.emailInput",email);
-        MobileActionManager.setInput("HomeView.passwordInput", password);
-        MobileActionManager.click("HomeView.signInButton");
-        MobileActionManager.click("HomeView.acceptOpenCamButton");
-        MobileActionManager.click("HomeView.cameraButton");
+        MobileActionManager.setInput("LoginView.emailInput",email);
+        MobileActionManager.setInput("LoginView.passwordInput", password);
+        MobileActionManager.click("LoginView.signInButton");
+        MobileActionManager.click("LoginView.acceptOpenCamButton");
+        MobileActionManager.click("LoginView.cameraButton");
     }
 
     public static void TapsOnCheckInButton() {
@@ -25,13 +25,9 @@ public class HomeService {
         MobileActionManager.click("HomeView.modalStartButton");
     }
 
-    public static void isCheckOutButtonLoaded() {
+    public static void TapsOnCheckOutButton() {
         MobileActionManager.waitVisibility("HomeView.checkOutButton");
         Assert.assertTrue(MobileActionManager.isVisible("HomeView.checkOutButton"));
-
-    }
-
-    public static void TapsOnCheckOutButton() {
         MobileActionManager.click("HomeView.checkOutButton");
         MobileActionManager.click("HomeView.modalFinishButton");
     }

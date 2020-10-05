@@ -14,14 +14,9 @@ public class HomeSteps extends PageSteps {
            HomeService.doLoginProcess(email, password);
     }
 
-    @When("The user taps on CheckInButton")
+    @When("The user checks in")
     public void theUserTapsOnCheckInButton() {
         HomeService.TapsOnCheckInButton();
-    }
-
-    @And("The button CheckOutButton is displayed")
-    public void theButtonCheckOutButtonIsDisplayed() {
-        HomeService.isCheckOutButtonLoaded();
     }
 
     @And("The user taps on CheckOutButton")
